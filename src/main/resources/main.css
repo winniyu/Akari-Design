@@ -1,0 +1,165 @@
+/**
+ * Write CSS code in this file to style your JavaFX user interface
+ *
+ * Note: You must link this file to your scene object by adding the following line of code to the
+ * JavaFX start() method:
+ *   scene.getStylesheets().add("main.css");
+ */
+ .layout-main{
+      -fx-min-width: 600px;
+      -fx-max-width: 600px;
+      -fx-min-height: 800px;
+      -fx-max-height: 800px;
+ }
+
+ .button-box {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .all-button{
+     -fx-padding: 10px 20px;
+     -fx-background-color: blue;
+     -fx-background-position: center;
+     -fx-text-fill: grey;
+     -fx-font-family: "Arial";
+ }
+
+ .button {
+     -fx-padding: 10px 20px;
+     -fx-background-color: #1E90FF;
+     -fx-text-fill: #fff;
+     -fx-border-color: transparent;
+     -fx-border-radius: 5px;
+     -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.3) , 2, 2 , 0 , 0 );
+     -fx-cursor: hand;
+     -fx-transition: all 0.3s ease-in-out;
+ }
+
+ .button:hover {
+     -fx-background-color: #0077B6;
+     -fx-effect: dropshadow( two-pass-box , rgba(0,0,0,0.5) , 4, 4 , 0 , 0 );
+ }
+
+
+
+ /* Game board */
+ .game-board {
+     -fx-background-color: #eee;
+     -fx-padding: 10px;
+ }
+ .puzzle-hbox{
+ -fx-min-width: 500px;
+       -fx-max-width: 500px;
+       -fx-min-height: 500px;
+       -fx-max-height: 500px;
+
+ }
+
+ /* Clue labels */
+ .clue {
+     -fx-font-size: 25px;
+     -fx-font-weight: bold;
+     -fx-text-fill: white;
+     -fx-font-family: "Arial";
+ }
+
+ .clue-label-container {
+     -fx-alignment: center;
+ }
+
+ .satisfied-clue {
+     -fx-font-size: 25px;
+     -fx-font-weight: bold;
+     -fx-text-fill: red;
+     -fx-font-family: "Arial";
+ }
+
+ /* Wall labels */
+ .wall {
+     -fx-background-color: #000;
+ }
+
+ /* Lamp buttons */
+ .lamp-button {
+     -fx-background-color: yellow;
+     -fx-border-radius: 50%;
+     -fx-min-width: 50px;
+     -fx-min-height: 50px;
+     -fx-background-image: url('light-bulb.png');
+     -fx-background-size: contain;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: center;
+ }
+
+ .illegal-button {
+     -fx-background-color: orange;
+     -fx-border-radius: 50%;
+     -fx-min-width: 50px;
+     -fx-min-height: 50px;
+     -fx-background-image: url('light-bulb.png');
+     -fx-background-size: contain;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: center;
+
+ }
+
+ /* Lit buttons */
+ .lit-button {
+     -fx-background-color: yellow;
+     -fx-border-radius: 50%;
+     -fx-min-width: 50px;
+     -fx-min-height: 50px;
+ }
+
+ /* Empty buttons */
+ .empty-button {
+     -fx-background-color: #fff;
+     -fx-border-radius: 50%;
+     -fx-min-width: 50px;
+     -fx-min-height: 50px;
+ }
+
+ .main-title {
+    -fx-font-family: "Arial";
+    -fx-font-size: 60px;
+    -fx-font-weight: bold;
+    -fx-text-fill: yellow;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 5);
+  }
+
+  .index-label{
+      -fx-font-family: "Arial";
+      -fx-font-size: 20px;
+      -fx-font-weight: bold;
+      -fx-text-fill: black;
+
+  }
+
+  .detail-label{
+        -fx-font-family: "Arial";
+        -fx-font-size: 20px;
+        -fx-font-weight: bold;
+        -fx-text-fill: black;
+  }
+  .success-label{
+            -fx-font-family: "Arial";
+            -fx-font-size: 30px;
+            -fx-font-weight: bold;
+            -fx-text-fill: red;
+      }
+
+  .process-label{
+          -fx-font-family: "Arial";
+          -fx-font-size: 30px;
+          -fx-font-weight: bold;
+          -fx-text-fill: grey;
+    }
+
+
+
+
+
+
+
+
